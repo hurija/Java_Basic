@@ -36,7 +36,10 @@ public class Operators {
         System.out.println("Twój wiek to: " + age + " - " + isMature);
         System.out.println(isHuman ? isMature : "ROBOT");
 
-        
+
+
+
+
 
 
 
