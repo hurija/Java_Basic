@@ -11,23 +11,53 @@ public class TypeString {
         System.out.println("y znajduje się na indeksie: " + text.indexOf('y'));
         System.out.println("y znajduje się na indeksie: " + text.indexOf("napis"));
 
-        System.out.println("Długość napisu w zmiennej text: " +text.length());
+        System.out.println("Długość napisu w zmiennej text: " + text.length());
 
         // Jak wydobyć i zapisać słowo napis ze zmiennej text
-        String napis = text.substring(8,13);
+        String napis = text.substring(8, 13);
         System.out.println(napis);
 
         String cite = "Być albo nie być!";
-        String updatedCite = cite.replaceAll("ć","c");
+        String updatedCite = cite.replaceAll("ć", "c");
         System.out.println(updatedCite);
 
         String name1 = "Ala";
         String name2 = "ala";
 
         System.out.println(name1.equals(name2));
-        System.out.println(name1.length()  >= name2.length());
+        System.out.println(name1.length() >= name2.length());
+
+        String name = "Michał";
+        System.out.println("Przed:" + name);
+        name = name.replace("ł", "l");
+        System.out.println("Po:" + name);
+        //name + "abc";
+        name = name + "abc";
+        System.out.println("Po złączeniu z abc:" + name);
+
+        // Sprawdzenie czy napis jest palindromem
+        String txt = "KAJAKI";
+        System.out.println(txt);
+        // utworzyliśmy obiekt klasy StringBuffer -> edytowalny String
+        StringBuffer editableTxt = new StringBuffer(txt);
+        // odwrócenie kolejności liter w napisie
+        editableTxt.reverse();
+        // przypisanie odwróconego napisu do zmiennej String -> nieedytowalnej
+        String txtReversed = editableTxt.toString();
+        System.out.println(editableTxt);
+
+        System.out.println("Czy napis jest palindromem: " + txt.equals(editableTxt.toString()));
+
+        // inny sposób
+        for (int index = 0; index < txt.length(); index = index + 1) {
+            if (txt.charAt(index) != txt.charAt(txt.length() - 1 - index)) {
+                System.out.println("Nie jest palindromem");
+                break;
+            }
+            System.out.println("index" + index + " jest równy: " + (txt.length() - 1 - index));
 
 
-
+        }
     }
+
 }
