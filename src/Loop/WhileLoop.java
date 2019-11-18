@@ -1,12 +1,14 @@
-package switch_case_instructions;
+package Loop;
 
 import java.util.Scanner;
 
-public class switch_case_instructions {
+public class WhileLoop {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
+        // znajdujemy się w pętli nieskończonej dopóki nie zostanie przerwana
         //CLI ->Command Line Interface
+        boolean isFinished = false;
+        while(isFinished != true) {
         System.out.println("Witaj w naszej aplikacji");
         System.out.println("(L) - logowanie");
         System.out.println("(R) - rejestracja");
@@ -24,29 +26,15 @@ public class switch_case_instructions {
                 System.out.println("rejstracja");
                 break;
 //            case 'q':
+            // przerwanie pętli
             case 'Q':
                 System.out.println("wyjście");
+                isFinished = true;
                 break;
             default:
                 System.out.println("zły wybór");
                 break;
         }
-        Grade grade = Grade.celujący;
-        switch (grade) {
-            case celujący:
-                System.out.println("świetnie");
-                break;
-            case dobry:
-            case bardzo_dobry:
-                System.out.println("jest dobrze");
-                break;
-            case dostateczny:
-            case dopuszczający:
-                System.out.println("mogło być lepiej");
-                break;
-            case niedostateczny:
-            System.out.println("tragedia");
-                break;
-            }
+        }
     }
 }
