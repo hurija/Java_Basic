@@ -33,6 +33,7 @@ public class Home_work3 {
                 System.out.println(todayYearNumber - yearOfBirthNumber - 1);
             } else {
                 System.out.println(todayYearNumber - yearOfBirthNumber);
+
             }
         }
     }
