@@ -1,15 +1,6 @@
 package home_work;
 
-import javafx.scene.control.skin.TextAreaSkin;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.Year;
-import java.time.temporal.ChronoUnit;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
 
 import static java.lang.String.*;
