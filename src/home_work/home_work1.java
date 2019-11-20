@@ -22,7 +22,7 @@ public class home_work1 {
         System.out.println("Pensja: ");
         salary = scanner.nextDouble();
         scanner.nextLine();
-        System.out.println("Płeć: ");
+        System.out.println("Płeć- K lub M: ");
         gender = scanner.nextLine();
         System.out.println("PESEL: ");
         pesel = scanner.nextLine();
